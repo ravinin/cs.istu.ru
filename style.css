@@ -1,29 +1,273 @@
 /* =Typography
 -----------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'CuprumFFURegular';
+    src: url('fonts/cuprum.eot');
+    src: url('fonts/cuprum.eot?#iefix') format('embedded-opentype'),
+    url('fonts/cuprum.woff') format('woff'),
+    url('fonts/cuprum.ttf') format('truetype'),
+    url('fonts/cuprum.svg#CuprumFFURegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kelson_sans_ruregular';
+    src: url('fonts/kelson_sans_regular_ru.eot');
+    src: url('fonts/kelson_sans_regular_ru.eot?#iefix') format('embedded-opentype'),
+         url('fonts/kelson_sans_regular_ru.woff') format('woff'),
+         url('fonts/kelson_sans_regular_ru.ttf') format('truetype'),
+         url('fonts/kelson_sans_regular_ru.svg#kelson_sans_ruregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kelson_sans_rubold';
+    src: url('fonts/kelson_sans_bold_ru.eot');
+    src: url('fonts/kelson_sans_bold_ru.eot?#iefix') format('embedded-opentype'),
+         url('fonts/kelson_sans_bold_ru.woff') format('woff'),
+         url('fonts/kelson_sans_bold_ru.ttf') format('truetype'),
+         url('fonts/kelson_sans_bold_ru.svg#kelson_sans_rubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kelson_sans_rulight';
+    src: url('fonts/kelson_sans_light_ru.eot');
+    src: url('fonts/kelson_sans_light_ru.eot?#iefix') format('embedded-opentype'),
+         url('fonts/kelson_sans_light_ru.woff') format('woff'),
+         url('fonts/kelson_sans_light_ru.ttf') format('truetype'),
+         url('fonts/kelson_sans_light_ru.svg#kelson_sans_rulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
 	margin: 0;
 	padding: 0;
+	font-family: Helvetica, Arial, Tahoma, sans-serif;
+	font-size: 14px;
+	color: #373737;
+}
+
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+
+h1 {
+	font-family: 'CuprumFFURegular';
+	font-size: 46px;
+}
+
+.content p {
+	line-height: 25px;
 }
 
 /* =Links
 -----------------------------------------------------------------------------*/
 
+a {
+	color: #bd0d12;
+	text-decoration: underline;
+}
+
+a.link {
+	color: #bd0d12;
+	border-bottom: 1px solid rgba(189, 13, 18, 0.3);
+	text-decoration: none;
+}
+
+a.pseudo {
+	color: #bd0d12;
+	border-bottom: 1px dashed rgba(189, 13, 18, 0.3);
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+	border: 0;
+}
 
 /* =Layout
 -----------------------------------------------------------------------------*/
-#page {
-	max-width: 1600px;
-	padding: 0 10px;
+.wrapper {
+	max-width: 1600px !important;
+	padding: 0 50px;
 }
 
+.promo {
+	position: relative;
+	color: #fff;
+	background: url(images/olymp.jpg);
+	height: 280px;
+}
+
+.promo-img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.bottom-wave {
+	background: url(images/wave_bottom_mask.png) repeat-x;
+	height: 7px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 9;
+}
+
+.promo-img img {
+	min-height: 200px;
+}
+
+.olympics {
+	font-size: 21px;
+    font-family: 'CuprumFFURegular';
+}
+
+.olympics h1 {
+	font-size: 79px;
+	margin: 20px 0 20px 0;
+	padding-top: 10px;
+}
+
+.content {
+	margin-top: 50px;
+}
 
 /* =Header
 -----------------------------------------------------------------------------*/
+
+header#header {
+	margin: 30px 0;
+}
+
+h1.logotype {
+	color: #000;
+	font-size: 30px;
+	font-family: 'kelson_sans_rulight';
+}
+
+h1.logotype strong {
+	font-family: 'kelson_sans_rubold';
+	font-weight: normal;
+	display: block;
+}
+
+h1.logotype a {
+	color: #000;
+	border: 0;
+}
+
+.contacts-top {
+	text-align: right;
+	margin-top: 15px;
+}
+
+.contacts-top p {
+	margin: 0 0 5px 0;
+}
+
+.phone-big {
+	font-size: 24px;
+	font-family: 'CuprumFFURegular';
+}
+
+.header-right {
+	text-align: right;
+}
 
 
 /* =Nav
 -----------------------------------------------------------------------------*/
 
+ul#top-menu {
+	font-family: 'CuprumFFURegular';
+	font-size: 16px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul#top-menu li {
+	display: inline;
+	margin-right: 20px;
+}
+
+
+ul#top-menu li a {
+	color: #bd0d12;
+	text-decoration: none;
+}
+
+ul#top-menu li a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+ul#top-menu li a.active {
+	color: #000;
+	text-decoration: none;
+}
+
+ul#promo-menu {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul#promo-menu li {
+	display: inline;
+}
+
+ul#promo-menu li a {
+	color: #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	margin-right: 20px;
+}
+
+ul#promo-menu li a:hover {
+	color: rgba(255, 255, 255, 0.8);
+	border-bottom: 0;
+	margin-right: 20px;
+}
+
+div.right-menu {
+	background: #eeede8;
+	padding: 30px;
+	position: relative;
+}
+
+div.right-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+div.right-menu ul li {
+	margin-bottom: 10px;
+}
+
+ul.pseudo-menu {
+	list-style: none;
+	padding: 15px 0;
+	margin: 0;
+	background: #fff;
+	width: 100%;
+}
+
+ul.pseudo-menu li {
+	display: inline;
+	margin-right: 20px;
+}
 
 /* =Misc
 -----------------------------------------------------------------------------*/
