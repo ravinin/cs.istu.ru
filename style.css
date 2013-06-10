@@ -68,6 +68,13 @@ h1 {
 	line-height: 25px;
 }
 
+.project-about h2 {
+	font-size: 27px;
+	font-family: Helvetica, Arial, Tahoma, sans-serif;
+	font-weight: bold;
+	letter-spacing: -2px;
+}
+
 /* =Links
 -----------------------------------------------------------------------------*/
 
@@ -95,9 +102,29 @@ a:hover {
 
 /* =Layout
 -----------------------------------------------------------------------------*/
+
+html, body {
+	height: 100%;
+}
+
+.whole-content {
+	min-height: 100%;
+	position: relative;
+}
+
+*html .whole-content {
+	height: 100%;
+}
+
+.empty-footer {
+	height: 80px;
+	clear: both;
+}
+
 .wrapper {
 	max-width: 1600px;
 	padding: 0 50px;
+	margin: 0 auto;
 }
 
 .promo {
@@ -105,6 +132,8 @@ a:hover {
 	color: #fff;
 	background: url(images/olymp.jpg);
 	height: 280px;
+	max-width: 2000px;
+	margin: 0 auto;
 }
 
 .promo-img {
@@ -140,7 +169,23 @@ a:hover {
 }
 
 .content {
-	margin-top: 50px;
+	margin-top: 30px;
+}
+
+.content-inside {
+	padding-top: 50px;
+	background: url(images/wave_inside.png) center top repeat-x;
+}
+
+.one-project {
+	padding: 30px 0 0 110px;
+}
+
+.project-img {
+	margin-left: -110px;
+	position: relative;
+	width: 95px;
+	float: left;
 }
 
 /* =Header
@@ -281,7 +326,8 @@ footer#footer {
 	color: #fff;
 	position: relative;
 	height: 50px;
-	padding: 20px 0 0 0;
+	padding: 30px 0 0 0;
+	margin-top: -80px;
 }
 
 footer#footer a.link {
