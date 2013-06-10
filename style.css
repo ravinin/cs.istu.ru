@@ -96,7 +96,7 @@ a:hover {
 /* =Layout
 -----------------------------------------------------------------------------*/
 .wrapper {
-	max-width: 1600px !important;
+	max-width: 1600px;
 	padding: 0 50px;
 }
 
@@ -275,3 +275,32 @@ ul.pseudo-menu li {
 
 /* =Footer
 -----------------------------------------------------------------------------*/
+
+footer#footer {
+	background: #000;
+	color: #fff;
+	position: relative;
+	height: 50px;
+	padding: 20px 0 0 0;
+}
+
+footer#footer a.link {
+	color: #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer#footer .copyrights img {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.top-wave {
+	background: url(images/wave_top_mask.png) repeat-x;
+	height: 7px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;
+}
+
