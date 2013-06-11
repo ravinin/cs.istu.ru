@@ -22,6 +22,9 @@ $(document).ready(function() {
                 anchors.removeClass("active");
                 anchor.addClass("active", 1000);
             }
+            if (scrolledTo < getAnchorTop($(anchors[0])) - upTo) {
+                anchors.removeClass("active");
+            }
         }
     }
     checkSectionSelected($(window).scrollTop());
