@@ -20,9 +20,9 @@ $(document).ready(function() {
             var target = getAnchorTop(anchor);
             if (scrolledTo > target - upTo && scrolledTo < target + upTo) {
                 anchors.removeClass("active");
-                anchor.addClass("active", 1000);
+                anchor.addClass("active");
             }
-            if (scrolledTo < getAnchorTop($(anchors[0])) - upTo) {
+            if (scrolledTo < getAnchorTop($(anchors[0])) - 25) {
                 anchors.removeClass("active");
             }
         }
