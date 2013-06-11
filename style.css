@@ -164,6 +164,16 @@ html, body {
 	z-index: 9;
 }
 
+.top-wave {
+	background: url(images/wave_top_mask.png) repeat-x;
+	height: 7px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
 .promo-img img {
 	min-height: 200px;
 }
@@ -335,6 +345,30 @@ ul.pseudo-menu li {
 
 /* =Misc
 -----------------------------------------------------------------------------*/
+
+.gallery {
+	position: relative;
+}
+
+.gallery .fotorama__thumbs_previews {
+	background: #eeede8;
+}
+
+.fotorama .caption {
+	position:absolute;
+	bottom:8px;
+	left:8px;
+	font-size:16px;
+	color:#fff;
+	}
+	.fotorama .caption__title,
+	.fotorama .caption__location {
+		display:inline-block;
+		padding:2px 6px;
+		line-height:19px;
+		background:#111;
+		background:hsla(0,0%,0%,.9);
+		}
 
 
 /* =Footer
