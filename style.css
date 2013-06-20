@@ -92,7 +92,8 @@ h2 {
 }
 
 .rect-cloud p {
-    margin: -5px 0 10px 0;
+    margin: -5px 0 15px 0;
+    line-height: 18px;
 }
 
 /* =Links
@@ -233,33 +234,31 @@ html, body {
 }
 
 .teacher img {
-    margin-top: 8px;
+    position: absolute;
+    top: 50%;
+    margin-top: -56px;
     width: 112px;
-    height: 112px;
     float: left;
 }
 
 .rect-cloud {
     float: left;
     background-color: white;
-    min-width: 60%;
     position: relative;
     height: 105px;
-    margin-left: 40px;
+    margin-left: 20px;
     border: solid 1px #ed6f70;
     line-height: 2em;
     padding: 21px 21px 0 21px;
 }
 
-
-
 .rect-cloud-arrow-border{
     position: absolute;
     top: 45px;
-    left: -32px; /*should be set to -border-width x 2 */
+    left: -32px;
     width: 0;
     height: 0;
-    border-color: transparent #ed6f70 transparent transparent; /*border color should be same as div div background color*/
+    border-color: transparent #ed6f70 transparent transparent;
     border-style: solid;
     border-width: 16px;
 }
@@ -269,10 +268,10 @@ html, body {
     display: block;
     position: absolute;
     top: 45px;
-    left: -31px; /*should be set to -border-width x 2 */
+    left: -31px;
     width: 0;
     height: 0;
-    border-color: transparent white transparent transparent; /*border color should be same as div div background color*/
+    border-color: transparent white transparent transparent;
     border-style: solid;
     border-width: 16px;
 }
