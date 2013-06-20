@@ -241,16 +241,6 @@ html, body {
     float: left;
 }
 
-.one-teacher {
-    min-height: 128px;
-}
-
-.one-teacher img {
-    width: 110px;
-    float: left;
-	margin-right: 10px;
-}
-
 .rect-cloud {
     float: left;
     background-color: white;
