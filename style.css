@@ -375,6 +375,12 @@ ul.pseudo-menu li {
 		background:hsla(0,0%,0%,.9);
 		}
 
+.circular {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
 
 /* =Footer
 -----------------------------------------------------------------------------*/

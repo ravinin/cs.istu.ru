@@ -13,7 +13,7 @@ $(document).ready(function() {
     }
     var anchors = $('a.pseudo[href^="#"]');
     function checkSectionSelected(scrolledTo){
-        var upTo = 100,
+        var upTo = 200,
             i;
         for (i = 0; i < anchors.length; i++) {
             var anchor = $(anchors[i]);
