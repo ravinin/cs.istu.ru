@@ -245,6 +245,7 @@ html, body {
     float: left;
     background-color: white;
     position: relative;
+    width: 87%;
     height: 105px;
     margin-left: 20px;
     border: solid 1px #ed6f70;
@@ -434,7 +435,7 @@ ul.pseudo-menu li {
 		background:hsla(0,0%,0%,.9);
 		}
 
-.circular-teacher {
+.circular {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
