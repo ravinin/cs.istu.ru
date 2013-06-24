@@ -417,6 +417,13 @@ ul.pseudo-menu li {
 	display: inline;
 	margin-right: 20px;
 }
+.breadcrumbs a.link {
+	border-bottom: 1px solid rgba(102, 102, 102, 0.3);
+}
+.breadcrumbs a.link:hover {
+	border-bottom: 0;
+	text-decoration: none;
+}
 
 /* =Misc
 -----------------------------------------------------------------------------*/
